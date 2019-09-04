@@ -93,17 +93,35 @@ function convert () {
 	
 	cal = cal.replace("https://www.youtube.com/embed/", "");
 	
-	cal = cal.replace("https://www.youtu.be/", "");
-	
-	cal = cal.replace("https://youtube.com/watch?v=", "");
+	cal = link.replace("http://www.youtube.com/watch?v=", "");
 
-	cal = cal.replace("https://youtube.com/playlist?", "");
+	cal = cal.replace("http://www.youtube.com/playlist?", "");
 
-	cal = cal.replace("https://youtube.com/embed?v=", "");
+	cal = cal.replace("http://www.youtube.com/embed?v=", "");
 	
-	cal = cal.replace("https://youtube.com/embed/", "");
+	cal = cal.replace("http://www.youtube.com/embed/", "");
 	
-	cal = cal.replace("https://youtu.be/", "");
+	cal = cal.replace("http://youtu.be/", "");
+	
+	cal = cal.replace("www.youtube.com/watch?v=", "");
+
+	cal = cal.replace("www.youtube.com/playlist?", "");
+
+	cal = cal.replace("www.youtube.com/embed?v=", "");
+	
+	cal = cal.replace("www.youtube.com/embed/", "");
+	
+	cal = cal.replace("www.youtu.be/", "");
+	
+	cal = cal.replace("youtube.com/watch?v=", "");
+
+	cal = cal.replace("youtube.com/playlist?", "");
+
+	cal = cal.replace("youtube.com/embed?v=", "");
+	
+	cal = cal.replace("youtube.com/embed/", "");
+	
+	cal = cal.replace("youtu.be/", "");
 	
 	result = cal;
 
