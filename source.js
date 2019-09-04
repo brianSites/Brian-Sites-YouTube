@@ -92,7 +92,9 @@ function convert () {
 	cal = cal.replace("https://www.youtube.com/embed?v=", "");
 	
 	cal = cal.replace("https://www.youtube.com/embed/", "");
-
+	
+	cal = cal.replace("https://www.youtu.be/", "");
+	
 	result = cal;
 
 	id = `v=${result}`;
