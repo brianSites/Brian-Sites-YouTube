@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>YouTube App</title>
+
+        <link rel="shortcut icon" href="../../External Resources/Web Dev Resources/Icons/YouTube Logo.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="YouTube App.css">
+
+    </head>
+
+    <body>
+
+        <div id="container">
+  
+            <header id="logo-container">
+              
+              <img src="https://bit.ly/33DfXCd" id="logo">
+              
+            </header>
+            
+            <section id="video-container">
+              <iframe id="display" src="https://www.youtube.com/embed/?enablejsapi=1&html5=1&rel=1">Iframe is not supported by your current browser. Plaese try a different browser. Recommend: Chrome</iframe>
+            </section>
+            
+            <div id="sidenav">
+              <a class="panel-option" href="#" onclick="changePanel(0);">Playlist</a>
+              <a class="panel-option" href="#" onclick="changePanel(1);">Controls</a>
+              <a class="panel-option" href="#" onclick="changePanel(2);">Help</a>
+            </div>
+            
+            <main id="playlist-panel" class="panel">
+              
+            </main>
+            
+            <main id="control-panel" class="panel">
+              
+            </main>
+            
+            <main id="help-panel" class="panel">
+              
+            </main>
+            
+          </div>
+
+        <script src="../../External Resources/Code Files/JS Libraries/jQuery Library.js"></script>
+
+        <script src="../../External Resources/Code Files/JS Libraries/jQuery UI Library.js"></script>
+
+        <script src="YouTube App.js"></script>
+    </body>
+</html>
