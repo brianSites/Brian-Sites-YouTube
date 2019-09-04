@@ -95,6 +95,16 @@ function convert () {
 	
 	cal = cal.replace("https://www.youtu.be/", "");
 	
+	cal = cal.replace("https://youtube.com/watch?v=", "");
+
+	cal = cal.replace("https://youtube.com/playlist?", "");
+
+	cal = cal.replace("https://youtube.com/embed?v=", "");
+	
+	cal = cal.replace("https://youtube.com/embed/", "");
+	
+	cal = cal.replace("https://youtu.be/", "");
+	
 	result = cal;
 
 	id = `v=${result}`;
