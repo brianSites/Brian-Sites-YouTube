@@ -180,13 +180,21 @@ function convert () {
 	result = cal;
 	
 	if (/list/.test(result)) {
-		id = result;
+		id = result.replace(/.*&/);
 		
 		document.querySelector("#link").value = id;
+		
+		document.querySelector("#id").value = id;
+		
+		start();
 	} else {
 		id = `v=${result}`;
 		
 		document.querySelector("#link").value = id;
+		
+		document.querySelector("#id").value = id;
+		
+		start();
 	}
 }
 
