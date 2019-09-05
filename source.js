@@ -193,7 +193,7 @@ function convert () {
 function start () {
 	id = document.querySelector("#id").value;
 	
-	if (/^(list=).*|(v=).*/.test(id)) {
+	if (/^list=.*/.test(id) || /^v=.*/.test(id)) {
 		if (/^.*list/.test(id)) {
 			playlist = id.replace(/^.*list=/, "");
 
