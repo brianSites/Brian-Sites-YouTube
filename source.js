@@ -93,7 +93,7 @@ function convert () {
 	
 	cal = cal.replace("https://www.youtube.com/embed/", "");
 	
-	cal = link.replace("http://www.youtube.com/watch?v=", "");
+	cal = cal.replace("https://www.yout.be/", "");
 
 	cal = cal.replace("http://www.youtube.com/playlist?", "");
 
@@ -101,7 +101,25 @@ function convert () {
 	
 	cal = cal.replace("http://www.youtube.com/embed/", "");
 	
-	cal = cal.replace("http://youtu.be/", "");
+	cal = cal.replace("http://www.youtu.be/", "");
+	
+	cal = cal.replace("https://m.youtube.com/watch?v=", "");
+
+	cal = cal.replace("https://m.youtube.com/playlist?", "");
+
+	cal = cal.replace("https://m.youtube.com/embed?v=", "");
+	
+	cal = cal.replace("https://m.youtube.com/embed/", "");
+	
+	cal = cal.replace("https://m.yout.be/", "");
+
+	cal = cal.replace("http://m.youtube.com/playlist?", "");
+
+	cal = cal.replace("http://m.youtube.com/embed?v=", "");
+	
+	cal = cal.replace("http://m.youtube.com/embed/", "");
+	
+	cal = cal.replace("http://m.youtu.be/", "");
 	
 	cal = cal.replace("www.youtube.com/watch?v=", "");
 
@@ -112,6 +130,16 @@ function convert () {
 	cal = cal.replace("www.youtube.com/embed/", "");
 	
 	cal = cal.replace("www.youtu.be/", "");
+	
+	cal = cal.replace("m.youtube.com/watch?v=", "");
+
+	cal = cal.replace("m.youtube.com/playlist?", "");
+
+	cal = cal.replace("m.youtube.com/embed?v=", "");
+	
+	cal = cal.replace("m.youtube.com/embed/", "");
+	
+	cal = cal.replace("m.youtu.be/", "");
 	
 	cal = cal.replace("youtube.com/watch?v=", "");
 
