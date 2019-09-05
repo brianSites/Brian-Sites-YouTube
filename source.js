@@ -176,8 +176,12 @@ function convert () {
 	cal = cal.replace("youtu.be/", "");
 	
 	result = cal;
-
-	id = `v=${result}`;
+	
+	if (/list/.test(id)) {
+		id = result;
+	} else {
+		id = `v=${result}`;
+	}
 
 	document.querySelector("#link").value = id;
 }
