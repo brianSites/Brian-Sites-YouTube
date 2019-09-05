@@ -84,8 +84,10 @@ function changePanel(panel) {
 
 function convert () {
 	link = document.querySelector("#link").value;
+	
+	cal = link;
 
-	cal = link.replace("https://www.youtube.com/watch?v=", "");
+	cal = cal.replace("https://www.youtube.com/watch?v=", "");
 
 	cal = cal.replace("https://www.youtube.com/playlist?", "");
 
@@ -177,7 +179,7 @@ function convert () {
 	
 	result = cal;
 	
-	if (/list/.test(id)) {
+	if (/list/.test(result)) {
 		id = result;
 	} else {
 		id = `v=${result}`;
