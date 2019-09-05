@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+	<head>
 
-        <meta charset="UTF-8">
-        <title>YouTube App</title>
+		<meta charset="UTF-8">
 
-        <link rel="shortcut icon" href="Images/YouTube Logo.ico" type="image/x-icon">
+		<title>YouTube App</title>
 
-        <link rel="stylesheet" href="styles.css">
+		<link rel="shortcut icon" href="Images/YouTube Logo.ico" type="image/x-icon">
 
-    </head>
+		<link rel="stylesheet" href="styles.css">
 
-    <body>
+	</head>
 
-        <div id="container">
-  
-            <header id="logo-container">
-              
-              <img src="https://bit.ly/33DfXCd" id="logo">
-              
-            </header>
-            
-            <section id="video-container">
-              <iframe id="display" src="https://www.youtube.com/embed/?enablejsapi=1&html5=1&rel=1" allowfullscreen>Iframe is not supported by your current browser.</iframe>
-            </section>
-            
-            <div id="sidenav">
-              <a class="panel-option" href="#" onclick="changePanel(0);">Playlist</a>
-              <a class="panel-option" href="#" onclick="changePanel(1);">Controls</a>
-              <a class="panel-option" href="#" onclick="changePanel(2);">Help</a>
-            </div>
-            
-            <main id="playlist-panel" class="panel">
-              
-            </main>
-            
-            <main id="control-panel" class="panel">
-              
-            </main>
-            
-            <main id="help-panel" class="panel">
-              
-            </main>
-            
-          </div>
+	<body>
 
-        <script src="Libraries/jQuery Library.js"></script>
+		<div id="container">
 
-        <script src="Libraries/jQuery UI Library.js"></script>
+		    <header id="logo-container">
 
-        <script src="source.js"></script>
-    </body>
+		 		<img src="https://bit.ly/33DfXCd" id="logo">
+
+		    </header>
+
+		    <section id="video-container">
+				<iframe id="display" src="https://www.youtube.com/embed/?enablejsapi=1&html5=1&rel=1" allowfullscreen>Iframe is not supported by your current browser.</iframe>
+		    </section>
+
+		    <div id="sidenav">
+				<a class="panel-option" href="#" onclick="changePanel(0);">Playlist</a>
+				<a class="panel-option" href="#" onclick="changePanel(1);">Controls</a>
+				<a class="panel-option" href="#" onclick="changePanel(2);">Help</a>
+		    </div>
+
+		    <main id="playlist-panel" class="panel">
+
+		    </main>
+
+		    <main id="control-panel" class="panel">
+
+		    </main>
+
+		    <main id="help-panel" class="panel">
+
+		    </main>
+
+		  </div>
+
+		<script src="Libraries/Annyang Library.js"></script>
+
+		<script src="Libraries/jQuery Library.js"></script>
+
+		<script src="Libraries/jQuery UI Library.js"></script>
+
+		<script src="source.js"></script>
+	</body>
 </html>
