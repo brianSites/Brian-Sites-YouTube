@@ -181,24 +181,30 @@ function convert () {
 	
 	if (/list/.test(result)) {
 		id = result;
+		
+		document.querySelector("#link").value = id;
 	} else {
 		id = `v=${result}`;
+		
+		document.querySelector("#link").value = id;
 	}
-
-	document.querySelector("#link").value = id;
 }
 
 function start () {
 	id = document.querySelector("#id").value;
+	
+	if (/^(list=).*|(v=).*/.test(id)) {
+		if (/^.*list/.test(id)) {
+			playlist = id.replace(/^.*list=/, "");
 
-	if (/^.*list/.test(id)) {
-		playlist = id.replace(/^.*list=/, "");
+			load(playlist);
+		} else {
+			video = id.replace(/^v=/, "");
 
-		load(playlist);
+			display(video);
+		}
 	} else {
-		video = id.replace(/^v=/, "");
-
-		display(video);
+		alert("Invalid ID");
 	}
 }
 
