@@ -58,7 +58,7 @@ var playlistId = playlist_link.replace(/^.*list=/, "");
 var url = "https://www.googleapis.com/youtube/v3/playlistItems";
 
 function display (id) {
-	$("#display").attr("src", `https://www.youtube.com/embed/${id}?enablejsapi=1&html5=1&rel=1&list=${playlistId}`);
+	$("#display").attr("src", `https://www.youtube.com/embed/${id}?enablejsapi=1&html5=1&rel=0&list=${playlistId}`);
 }
 
 function changePanel(panel) {
