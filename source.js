@@ -180,7 +180,7 @@ function convert () {
 	result = cal;
 	
 	if (/list/.test(result)) {
-		id = result.replace(/.*&/);
+		id = result.replace(/.*&/, "");
 		
 		document.querySelector("#link").value = id;
 		
