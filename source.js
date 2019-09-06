@@ -233,7 +233,7 @@ function load (playList) {
 
 		display(id, playList);
 
-		playlistPanel(data);
+		playlistPanel(data, playList);
 
 		controlPanel();
 
@@ -241,7 +241,7 @@ function load (playList) {
 	});
 }
 
-function playlistPanel (data) {
+function playlistPanel (data, playlist) {
 	$.each(data.items, function(i, item) {
 		var id = item.snippet.resourceId.videoId;
 
@@ -250,9 +250,11 @@ function playlistPanel (data) {
 		var title = item.snippet.title;
 
 		var description = item.snippet.description.substring(0, 150) + "...";
+		
+		var list = playlist;
 
 		$("#playlist-panel").append(`
-			<article class="playlist-video" data-id="${id}">
+			<article class="playlist-video" data-id="${id}" data-list="${list}">
 			
 			<img src="${thumbnail}" class="playlist-video-thumbnail">
 			
@@ -483,8 +485,10 @@ function loop (boolean) {
 
 $("#playlist-panel").on("click", "article", function() {
 	var id = $(this).attr("data-id");
+	
+	var list = $(this).attr("data-list");
 
-	display(id);
+	display(id, list);
 });
 
 $("#play-buttton").on("click", function () {
