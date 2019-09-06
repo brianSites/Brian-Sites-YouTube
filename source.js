@@ -620,4 +620,6 @@ annyang.addCommands(commands);
 
 annyang.start();
 
+annyang.debug();
+
 load(playlistId);
