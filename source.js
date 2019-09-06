@@ -583,43 +583,45 @@ $("#play-buttton").on("click", function () {
 	play();
 });
 
-var commands = {
-	"play": function () {
-		play();
-	},
-	"pause": function () {
-		pause();
-	},
-	"stop": function () {
-		stop();
-	},
-	"mute": function () {
-		mute();
-	},
-	"unmute": function () {
-		unmute();
-	},
-	"next": function () {
-		playNext();
-	},
-	"previous": function () {
-		playPrevious();
-	},
-	"loop on": function () {
-		loop(true);
-	},
-	"loop off": function () {
-		loop(false);
-	},
-	"reset": function () {
-		load(playlistId);
-	}
-};
+if (annyang) {
+	var commands = {
+	        "play": function () {
+		        play();
+	        },
+	        "pause": function () {
+		        pause();
+	        },
+	        "stop": function () {
+		        stop();
+	        },
+	        "mute": function () {
+		        mute();
+	        },
+	        "unmute": function () {
+		        unmute();
+	        },
+	        "next": function () {
+		        playNext();
+	        },
+	        "previous": function () {
+		        playPrevious();
+	        },
+	        "loop on": function () {
+		        loop(true);
+	        },
+	        "loop off": function () {
+		        loop(false);
+	        },
+	        "reset": function () {
+		        load(playlistId);
+	        }
+        };
 
-annyang.addCommands(commands);
+        annyang.addCommands(commands);
 
-annyang.start();
+        annyang.start();
 
-annyang.debug();
+        annyang.debug();
+}
 
 load(playlistId);
