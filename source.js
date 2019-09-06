@@ -57,8 +57,8 @@ var playlistId = playlist_link.replace(/^.*list=/, "");
 
 var url = "https://www.googleapis.com/youtube/v3/playlistItems";
 
-function display (id) {
-	$("#display").attr("src", `https://www.youtube.com/embed/${id}?enablejsapi=1&html5=1&rel=0&list=${playlistId}`);
+function display (id, playId) {
+	$("#display").attr("src", `https://www.youtube.com/embed/${id}?enablejsapi=1&html5=1&rel=0&list=${playId}`);
 }
 
 function changePanel(panel) {
@@ -209,7 +209,7 @@ function start () {
 		} else {
 			video = id.replace(/^v=/, "");
 
-			display(video);
+			display(video, null);
 		}
 	} else {
 		alert("Invalid ID");
@@ -231,7 +231,7 @@ function load (playList) {
 	$.getJSON(url, options, function(data) {
 		var id = data.items[0].snippet.resourceId.videoId;
 
-		display(id);
+		display(id, playList);
 
 		playlistPanel(data);
 
