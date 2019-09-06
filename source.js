@@ -95,7 +95,7 @@ function convert () {
 	
 	cal = cal.replace("https://www.youtube.com/embed/", "");
 	
-	cal = cal.replace("https://www.yout.be/", "");
+	cal = cal.replace("https://www.youtu.be/", "");
 	
 	cal = cal.replace("http://youtube.com/watch?v=", "");
 
@@ -115,7 +115,7 @@ function convert () {
 	
 	cal = cal.replace("https://m.youtube.com/embed/", "");
 	
-	cal = cal.replace("https://m.yout.be/", "");
+	cal = cal.replace("https://m.youtu.be/", "");
 	
 	cal = cal.replace("http://m.youtube.com/watch?v=", "");
 
@@ -135,7 +135,7 @@ function convert () {
 	
 	cal = cal.replace("https://youtube.com/embed/", "");
 	
-	cal = cal.replace("https://yout.be/", "");
+	cal = cal.replace("https://youtu.be/", "");
 	
 	cal = cal.replace("http://youtube.com/watch?v=", "");
 
@@ -209,7 +209,7 @@ function start () {
 		} else {
 			video = id.replace(/^v=/, "");
 
-			display(video, null);
+			display(video, "none");
 		}
 	} else {
 		alert("Invalid ID");
