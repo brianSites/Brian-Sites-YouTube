@@ -57,6 +57,8 @@ var playlistId = playlist_link.replace(/^.*list=/, "");
 
 var url = "https://www.googleapis.com/youtube/v3/playlistItems";
 
+document.getElementById("sidenav").style.width = "115px";
+
 function display (id) {
 	$("#display").attr("src", `https://www.youtube.com/embed/${id}?enablejsapi=1&html5=1&rel=0&list=${playlistId}`);
 }
