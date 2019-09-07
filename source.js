@@ -97,6 +97,8 @@ function convert () {
 	
 	cal = cal.replace("https://www.youtu.be/", "");
 	
+	cal = cal.replace(/^https:\/\/www\.youtu.be\/.*?/, "");
+	
 	cal = cal.replace("http://youtube.com/watch?v=", "");
 
 	cal = cal.replace("http://www.youtube.com/playlist?", "");
@@ -106,6 +108,8 @@ function convert () {
 	cal = cal.replace("http://www.youtube.com/embed/", "");
 	
 	cal = cal.replace("http://www.youtu.be/", "");
+	
+	cal = cal.replace(/^http:\/\/youtu\.be\/.*?/, "");
 	
 	cal = cal.replace("https://m.youtube.com/watch?v=", "");
 
@@ -117,6 +121,8 @@ function convert () {
 	
 	cal = cal.replace("https://m.youtu.be/", "");
 	
+	cal = cal.replace(/^https:\/\/m\.youtu\.be\/.*?/, "");
+	
 	cal = cal.replace("http://m.youtube.com/watch?v=", "");
 
 	cal = cal.replace("http://m.youtube.com/playlist?", "");
@@ -126,6 +132,8 @@ function convert () {
 	cal = cal.replace("http://m.youtube.com/embed/", "");
 	
 	cal = cal.replace("http://m.youtu.be/", "");
+	
+	cal = cal.replace(/^http:\/\/m\.youtu\.be\/.*?/, "");
 	
 	cal = cal.replace("https://youtube.com/watch?v=", "");
 
@@ -137,6 +145,8 @@ function convert () {
 	
 	cal = cal.replace("https://youtu.be/", "");
 	
+	cal = cal.replace(/^https:\/\/youtu\.be\/.*?/, "");
+	
 	cal = cal.replace("http://youtube.com/watch?v=", "");
 
 	cal = cal.replace("http://youtube.com/playlist?", "");
@@ -146,6 +156,8 @@ function convert () {
 	cal = cal.replace("http://youtube.com/embed/", "");
 	
 	cal = cal.replace("http://youtu.be/", "");
+	
+	cal = cal.replace(/^http:\/\/youtu\.be\/.*?/, "");
 	
 	cal = cal.replace("www.youtube.com/watch?v=", "");
 
@@ -157,6 +169,8 @@ function convert () {
 	
 	cal = cal.replace("www.youtu.be/", "");
 	
+	cal = cal.replace(/^www\.youtu\.be\/.*?/, "");
+	
 	cal = cal.replace("m.youtube.com/watch?v=", "");
 
 	cal = cal.replace("m.youtube.com/playlist?", "");
@@ -167,6 +181,8 @@ function convert () {
 	
 	cal = cal.replace("m.youtu.be/", "");
 	
+	cal = cal.replace(/^m\.youtu\.be\/.*?/, "");
+	
 	cal = cal.replace("youtube.com/watch?v=", "");
 
 	cal = cal.replace("youtube.com/playlist?", "");
@@ -176,6 +192,8 @@ function convert () {
 	cal = cal.replace("youtube.com/embed/", "");
 	
 	cal = cal.replace("youtu.be/", "");
+	
+	cal = cal.replace(/^youtu\.be\/.*?/, "");
 	
 	result = cal;
 	
