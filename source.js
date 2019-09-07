@@ -7,3 +7,5 @@ function youtube () {
 	$("#weather-container").hide();
 	$("#youtube-container").show();
 }
+
+weather();
