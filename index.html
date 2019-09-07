@@ -6,50 +6,89 @@
 
 		<title>YouTube App</title>
 
-		<link rel="shortcut icon" href="Images/YouTube Icon.ico" type="image/x-icon">
+		<link id="icon" rel="shortcut icon" href="Images/YouTube Icon.ico" type="image/x-icon">
 
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="youtube.css">
+		
+		<link rel="stylesheet" href="weather.css">
 
 	</head>
 
 	<body>
+		<div id="youtube-container">
+			
+			<div id="container">
 
-		<div id="container">
+			    <header id="logo-container">
 
-		    <header id="logo-container">
+					<img src="https://bit.ly/33DfXCd" id="logo">
 
-		 		<img src="https://bit.ly/33DfXCd" id="logo">
+			    </header>
 
-		    </header>
+			    <section id="video-container">
+					<iframe id="display" src="https://www.youtube.com/embed/?enablejsapi=1&html5=1&rel=1" allowfullscreen>Iframe is not supported by your current browser.</iframe>
+			    </section>
 
-		    <section id="video-container">
-				<iframe id="display" src="https://www.youtube.com/embed/?enablejsapi=1&html5=1&rel=1" allowfullscreen>Iframe is not supported by your current browser.</iframe>
-		    </section>
+			    <div id="sidenav">
+					<a class="panel-option" href="#" onclick="changePanel(0);">Playlist</a>
+					<a class="panel-option" href="#" onclick="changePanel(1);">Controls</a>
+					<a class="panel-option" href="#" onclick="changePanel(2);">Help</a>
+			    </div>
 
-		    <div id="sidenav">
-				<a class="panel-option" href="#" onclick="changePanel(0);">Playlist</a>
-				<a class="panel-option" href="#" onclick="changePanel(1);">Controls</a>
-				<a class="panel-option" href="#" onclick="changePanel(2);">Help</a>
-		    </div>
+			    <main id="playlist-panel" class="panel">
 
-		    <main id="playlist-panel" class="panel">
+			    </main>
 
-		    </main>
+			    <main id="control-panel" class="panel">
 
-		    <main id="control-panel" class="panel">
+			    </main>
 
-		    </main>
+			    <main id="help-panel" class="panel">
 
-		    <main id="help-panel" class="panel">
+			    </main>
 
-		    </main>
-
+			</div>
 		</div>
+		
+		<div id="weather-container">
+
+			<div id="topbar">
+
+			    <h1 id="topbar-timezone">Time Zone</h1>
+
+			    <canvas id="topbar-icon">Icon</canvas>
+
+			</div>
+
+			<div id="temperature">
+
+			    <div id="temperature-degree">
+
+				<h2 id="temperature-degree-number">Degrees</h2>
+
+				<sup id="temperature-degree-type">Type</sup>
+
+			    </div>
+
+			    <div id="description">
+
+				<p id="description-string">Description</p>
+
+			    </div>
+
+			</div>
+		</div>
+
+		<script src="Libraries/Skycons Library.js"></script>
 		
 		<script src="Libraries/jQuery Library.js"></script>
 
 		<script src="Libraries/jQuery UI Library.js"></script>
+		
+		<script src="hub.js"></script>
 
-		<script src="source.js"></script>
+		<script src="youtube.js"></script>
+		
+		<script src="weather.js"></script>
 	</body>
 </html>
