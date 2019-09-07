@@ -1,9 +1,0 @@
-#sidenav2 {
-	position: fixed;
-	right: 0px;
-	background-color: #111;
-	overflow-x: hidden;
-	padding: 20px;
-	height: 100vh;
-	width: 130px;
-}
