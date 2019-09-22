@@ -14,6 +14,14 @@ The playlist menu is the playlist controls options. When a link to a playlist is
 
 The control menu is the core of the website. It house the converter, the website controls and the video controls. These are essential to the program and a lack ofthese will cause the program to crash.
 
-### Help
+## Usage
 
-The help menu is the built-in help tutorial mentioned above. It will guide you through the basic usage of the website.
+Now for the usage of this website. I mean, what is the point of a website if you don't know how to use it?
+
+### Playing A Video
+
+
+### Playing A Playlist
+
+
+### Using Controls
