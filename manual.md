@@ -60,4 +60,6 @@ It will change to the Playlist menu and fill in the last 50 video in the playlis
 
 * The Time Controls can jump to a specific time period in the video
 
-* The 
+* The Volume Controls can be 0 - 100 and control the volume
+
+* The Speed Controls can be 0 - 2 and control the speed
