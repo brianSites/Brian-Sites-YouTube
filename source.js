@@ -74,12 +74,6 @@ function changePanel(panel) {
 		$("#control-panel").show();
 		
 	}
-
-	if (panel === 2) {
-		$(".panel").hide();
-
-		$("#help-panel").show();
-	}
 }
 
 function convert () {
@@ -381,36 +375,6 @@ function controlPanel () {
 			<br>
 		</div>
 	
-	`);
-}
-
-function helpPanel () {
-	$("#help-panel").html(`
-			<h1 class="title">How To Use The Player?</h1>
-			<p class="text">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to the tutorial on how to use the player above. This tutorial will guide you through the process of displaying a video or playlist. It will also show you how to use the voice commands. As for the controls, they are pretty self-explanatory.
-			</p>
-			<br>
-			<h2 class="heading">Why Not Use The YouTube Website</h2>
-      <p class="text">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspThe main question some of you may be asking is, why not just use the YouTube website? That is a very good question and my answer is that the YouTube website theme is mostly black and white. There is no color and no inspiration. It was meant to serve its purpose as an online video sharing site and it has served its purpose well. But there is almost no creativity in its design.
-      </p>
-      <br>
-      <h2 class="heading">Getting An Id</h2>
-			<p class="text">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now, to the part you came for. The player works mostly by using the YouTube API and the YouTube Iframe API. These are two different APIs that allow this project to function properly. However these APIs like to work with the IDs of a video or playlist, not the actual link. So I included a link converter. Paste in the link and the converter will turn it into an ID.
-			</p>
-			<br>
-			<h2 class="heading">Loading A Video Or Playlist</h2>
-			<p class="text">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After you put an ID into the input box, simply press Submit ID and watch the magic happen. The video will turn into your chosen video and if it is a playlist then the playlist will fill in the other videos. Please note that the playlist can only hold 50 videos because the YouTube API Request will only return the last 50 videos in the playlist.
-			</p>
-		
-			<br>
-			<h2 class="heading">Using Voice Commands</h2>
-			<p class="text">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes, there are voice commands in this website. See, how much work I put into it? Say Reset to reset the video and playlist. Say Next to play the next video in the playlist. Say Previous to play the previous video in the playlist. Say Play to play the video. Say Pause to pause the video. Say Stop to stop the video. Say Loop On to turn loop on. Say Loop Off to turn loop off. Say Mute to mute the video. Say Unmute to unmute the video.
-			</p>
 	`);
 }
 
