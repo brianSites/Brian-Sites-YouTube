@@ -48,6 +48,7 @@ body {
 #display {
 	height: 315px;
 	width: 560px;
+	border: 0px solid black;
 }
 
 #logo-container, #video-container {
