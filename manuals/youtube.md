@@ -16,7 +16,7 @@ Here are all the notes about IDs of both types:
 
 ## Menu
 
-The menu is located on the left side of the website is used to select different menus. The different menus do different things which you will read about below.
+The menu selector located on the left side of the website is used to select different menus. The different menus do different things which you will read about below.
 
 ### Playlist
 
@@ -24,7 +24,7 @@ The playlist menu is the playlist controls options. When a link to a playlist is
 
 ### Controls
 
-The control menu is the core of the website. It house the converter, the website controls and the video controls. These are essential to the program and a lack of these will cause the program to crash.
+The control menu is the core of the website. It houses the converter, the website controls and the video controls. These are essential to the program and a lack of these will cause the program to crash or render it obsolete.
 
 ## Usage
 
@@ -32,19 +32,19 @@ Now for the usage of this website. I mean, what is the point of a website if you
 
 ### Getting A Video ID
 
-To get a Video ID, you must first get the link of the video. After retrieving the link, you press the Controls menu and locate the word, Link Goes Here. Paste in your link there and press Submit Link. This will produce a Video ID for to use.
+To get a Video ID, you must first get the link of the video. After retrieving the link, you press the Controls menu and locate the word, Link Goes Here. Paste in your link there and press Submit Link. This will produce a Video ID for you to use.
 
 ### Playing A Video
 
-If you follow the last topic on how to get an ID, then the website should have automatically play the resulting Video ID. But let's say your friend gave you an ID. Just type the ID into the box, that says ID Goes Here. Then, press Submit ID and the display should change into your friend's video.
+If you follow the last topic on how to get an Video ID, then the website should have automatically play the resulting Video ID. But let's say your friend gave you an ID. Just type the ID into the box, that says ID Goes Here. Then, press Submit ID and the display should change into your friend's video.
 
 ### Getting A Playlist ID
 
-To get a Playlist ID, you must first get the link of the playlist. After retrieving the link, you press the Controls menu and locate the word, Link Goes Here. Paste in your link there and press Submit Link. This will produce a Playlist ID for to use.
+To get a Playlist ID, you must first get the link of the playlist. After retrieving the link, you press the Controls menu and locate the word, Link Goes Here. Paste in your link there and press Submit Link. This will produce a Playlist ID for you to use.
 
 ### Playing A Playlist
 
-If you follow the last topic on how to get an ID, then the website should have automatically play the resulting Playlist ID. But let's say your friend gave you an ID. Just type the ID into the box, that says ID Goes Here. Then, press Submit ID and the display should change into your friend's playlist.
+If you follow the last topic on how to get an Playlist ID, then the website should have automatically play the resulting Playlist ID. But let's say your friend gave you an ID. Just type the ID into the box, that says ID Goes Here. Then, press Submit ID and the display should change into your friend's playlist.
 
 It will change to the Playlist menu and fill in the last 50 video in the playlist. Press any of these and it will play its respective video.
 
