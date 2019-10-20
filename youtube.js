@@ -51,7 +51,7 @@ function onPlayerError (data) {
 }
 
 
-var key = "AIzaSyDS4ozFAC4l0QlTMi8SU9vKWANjL4ZShvg";
+var key = "AIzaSyCPKXiJguLfT5ShPqISHQn1UTTNCyxIYfQ";
 
 var playlistId = playlist_link.replace(/^.*list=/, "");
 
