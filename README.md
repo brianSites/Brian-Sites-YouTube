@@ -1,6 +1,6 @@
 # Welcome to Brian Sites!
 
-I am the creator of this multi-purpose website, Brian! This is the homepage. It will have links to all the other parts of the website like the YouTube app.
+I am the creator of this website, Brian! This is the homepage. It will have links to all the other parts of the website.
 
 ## [Brian Sites: YouTube](https://brianSites.github.io/youtube)
 
