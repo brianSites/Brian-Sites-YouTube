@@ -6,13 +6,15 @@
 
         <meta charset="UTF-8">
 
-        <title>Aperture Science Official Webpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Aperture Science</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap">
 
         <style>
         
-            @import url('https://fonts.googleapis.com/css?family=Itim|Jaldi:400,700&display=swap');
-
-            *, *::before, *::after {
+            * {
 
                 box-sizing: border-box;
 
@@ -22,75 +24,19 @@
 
                 margin: 0;
 
-                padding: 0;
+                height: 100vh;
 
-                min-height: 100vh;
-
-                min-width: 100vw;
+                width: 100vw;
 
                 overflow: hidden;
 
-                background: url("./Images/Background\ Image.png");
-
-                color: #FFF;
-
-                font-family: Itim, sans-serif;
-
-                font-size: 1.2rem;
+                font-family: Lato, sans-serif;
 
             }
 
-            .navbar {
+            .wrapper {
 
                 display: flex;
-
-                height: 7vh;
-
-                background: #222D29;
-
-                padding-left: 0.5rem;
-
-                align-items: center;
-
-            }
-
-            .aperture-logo {
-
-                display: flex;
-
-                align-items: center;
-
-                color: inherit;
-
-                font-family: Jaldi, sans-serif;
-
-                font-size: 1.25em;
-
-                text-decoration: none;
-
-            }
-            
-            .logo {
-            
-                height: 4vh;
-            
-            }
-
-            .aperture-name {
-
-                margin-left: 1rem;
-
-                font-size: 1.5rem;
-
-            }
-
-            main {
-
-                display: flex;
-
-                height: 75vh;
-
-                width: 100vw;
 
                 flex-direction: column;
 
@@ -98,37 +44,203 @@
 
                 align-items: center;
 
-                text-align: center;
+                position: absolute;
+
+                height: 110vh;
+
+                width: 110vw;
+
+                background: url("./Images/background.jpg");
+
+                background-size: 100% auto;
+
+            }
+
+            .light {
+
+                position: absolute;
+
+                height: 110vh;
+
+                width: 110vw;
+
+                border-radius: 50%;
+
+                background: radial-gradient(circle, rgba(255, 255, 255, 0.5), 20%, rgba(255, 255, 255, 0), 60%,);
+
+                opacity: 0.4;
+
+                z-index: 10;
+
+                pointer-events: none;
+
+            }
+
+            .card {
+
+                display: flex;
+
+                flex-direction: column;
+
+                justify-content: center;
+
+                align-items: center;
+
+                position: relative;
+
+                height: 250px;
+
+                width: 450px;
+
+                margin-top: 50px;
+
+                padding: 10px 15px 15px 10px;
+
+                border-radius: 2px;
+
+                background: url("./Images/card-texture.jpg");
+
+                background-size: cover;
+
+                box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.4), -10px 0px 20px rgba(0, 0, 0, 0.4), 10px 0px 20px rgba(0, 0, 0, 0.4), inset 1px 1px 20px rgba(0, 0, 0, 0.4);
+
+                transition: 0.5s;
+
+            }
+
+            .card:hover {
+
+                transform: scale(1.07);
+
+            }
+
+            .front {
+
+                transform: rotateZ(-7deg);
+
+                left: -15%;
+
+            }
+
+            .logo {
+
+                height: 120px;
+
+                width: 120px;
+
+                background: url("./Images/gold-texture.jpg");
+
+                background-size: cover;
+
+                mask: url("./Images/aperture-logo.png");
+
+                -webkit-mask: url("./Images/aperture-logo.png");
+
+            }
+
+            .company-text {
+
+                padding: 20px;
+
+                color: transparent;
+
+                text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+
+                background: url("./Images/gold-texture.jpg");
+
+                background-size: cover;
+
+                background-clip: text;
+
+                -webkit-background-clip: text;
+
+                font-size: 26px;
+
+                letter-spacing: 2px;
+
+                word-spacing: 6px;
+
+            }
+
+            .back {
+
+                transform: rotateZ(4deg);
+
+                top: -2%;
+
+                left: 5%;
 
             }
 
             .title {
 
-                font-size: 2.5em;
+                position: absolute;
+
+                top: 25px;
+
+                left: 30px;
+
+                text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.2);
+
+                color: transparent;
+
+                font-weight: 700;
 
             }
 
-            .subtitle {
+            .text {
 
-                font-size: 1.25rem;
+                position: absolute;
+
+                top: 100px;
+
+                left: 30px;
+
+                font-size: 16px;
+
+                font-weight: 700;
+
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+                color: transparent;
+
+                background: url("./Images/silver-texture.jpg");
+
+                background-clip: text;
+
+                -webkit-background-clip: text;
+
+                background-size: cover;
 
             }
 
-            .badge {
+            .name-text {
 
-                display: flex;
+                font-size: 32px;
 
-                height: 5vh;
+                word-spacing: 8px;
 
-                width: 10vw;
+                background: url("./Images/silver-texture.jpg");
 
-                background: #00AAFF;
+                background-clip: text;
 
-                border-radius: 10px;
+                -webkit-background-clip: text;
 
-                flex-direction: column;
+                background-size: cover;
 
-                justify-content: center;
+            }
+
+            .role-text {
+
+                font-size: 18px;
+
+                background: url("./Images/gold-texture.jpg");
+
+                background-clip: text;
+
+                -webkit-background-clip: text;
+
+                background-size: cover;
 
             }
         
@@ -138,36 +250,60 @@
 
     <body>
 
-        <header class="navbar">
+        <div class="wrapper">
 
-            <a class="aperture-logo" href="/">
-            
-                <img class="logo" src="Images/Aperture Logo.svg" alt="Logo">
+            <div class="light"></div>
 
-                <div class="aperture-name">Founded By Brian Nguyen</div>
+            <div class="card front">
 
-            </a>
+                <div class="logo"></div>
 
-        </header>
-
-        <main>
-
-            <div class="text">
-
-                <h1 class="title">Aperture Science</h1>
-
-                <p class="subtitle">Overthrow authority, enpower indiviuals, break limits, become better</p>
-
-            </div>
-            
-            <div class="badge">
-
-                <p>Created By Brian</p>
+                <div class="company-text">APERTURE SCIENCE</div>
 
             </div>
 
-        </main>
+            <div class="card back">
 
+                <div class="title">
+
+                    <div class="name-text">BRIAN NGUYEN</div>
+
+                    <div class="role-text">Research Associate And Founder</div>
+
+                </div>
+
+                <div class="text">
+
+                    <div>I am Brian Nguyen, founder and primary reseacher of Aperture Science. Aperture Science is intended as a research and development program, inventing new technologies like teleknesis.</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+        
+            let rotation = 0;
+
+            setInterval(() => {
+
+                rotation = rotation > 360 ? 0 : rotation - 0.3;
+
+                document.querySelector(".logo").style.transform = `rotate(${rotation}deg)`
+
+            }, 10)
+
+            document.onmousemove = event => {
+
+                document.querySelector(".wrapper").style.transform = `translate(-${event.clientX * 0.1}px, -${event.clientY * 0.1}px)`;
+
+                document.querySelector(".light").style.transform = `translate(-${event.clientX * 0.1}px, -${event.clientY * 0.1}px)`;
+
+            }
+        
+        </script>
+        
     </body>
 
 </html>
