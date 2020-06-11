@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navbar {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 7.5vh;
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar-label {
+    padding: 1vh;
+    height: 4vh;
+    border: 0.25vh solid #2b2b2b;
+    border-radius: 1vh;
+    font-family: Nunito;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 1s;
+}
+.navbar-label:hover {
+    border: 0.25vh solid #ffffff;
+    transition: 1s;
+}
+.container {
+    width: 100vw;
+    height: 85vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.book-icon {
+    width: 35vh;
+    height: 35vh;
+}
+.ui-interface {
+    width: 35vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.book-description {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ui-text {
+    font-family: Nunito;
+    font-size: x-large;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+.chapter-data {
+    font-size: larger;
+    font-weight: normal;
+}
+.controls {
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ui-button {
+    cursor: pointer;
+    width: 5vh;
+    height: 5vh;
+}
+.footer {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 7.5vh;
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-button {
+    cursor: pointer;
+    width: 4vh;
+    height: 4vh;
+}
+.footer-chapter-name {
+    font-family: Nunito;
+    font-size: medium;
+    font-weight: normal;
+    color: #ffffff;
+}
